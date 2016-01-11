@@ -6,14 +6,11 @@ import rcspy.pccontroller.video.VideoStream;
 
 public class MainFrame extends JFrame {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 6619999896163341973L;
 	private VideoPanel _videoPanel; 
 	
 	public MainFrame(VideoStream videoStream)
-	{	
+	{
+		super();
 		_videoPanel = videoStream.getVideoPanel();		
 		initContent();
 		
@@ -25,7 +22,6 @@ public class MainFrame extends JFrame {
 	private void initContent()
 	{
 		setContentPane(_videoPanel);
-		System.out.println(_videoPanel.getSize());
 		setSize(_videoPanel.getSize());
 	}
 	

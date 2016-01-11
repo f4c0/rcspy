@@ -11,7 +11,8 @@ public class VideoPanel extends JPanel {
 	private BufferedImage _image;
 	
 	public VideoPanel(BufferedImage image)
-	{	
+	{
+		super();
 		_image = image;
 		setSize(new Dimension(_image.getWidth(), _image.getHeight()));
 	}
