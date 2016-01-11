@@ -1,9 +1,16 @@
 package rcspy.pccontroller.main;
 
-public class Main {
+import rcspy.pccontroller.ihm.MainFrame;
+import rcspy.pccontroller.video.VideoStream;
 
-	public static void main(String[] args) {
+public class Main {
+	
+		public static void main(String[] args) {
 		System.out.println("HelloWorld");
+		
+		VideoStream videoStream = new VideoStream();
+		MainFrame ihm = new MainFrame(videoStream);
+		ihm.setVisible(true);
 
 	}
 
